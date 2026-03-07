@@ -465,3 +465,26 @@ h3{
     align-items: flex-start;
   }
 }
+
+.contact-card{
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 30px;
+
+  background: #fff;
+  border-radius: 16px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  border-top: 4px solid #2f4b8f;
+
+  text-align: center;
+}
+
+.contact-phone{
+  display:block;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2f4b8f;
+  margin: 10px 0 20px;
+}

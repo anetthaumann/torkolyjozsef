@@ -605,17 +605,18 @@ color:#2f4b8f;
 
 .price-table-wrap{
   width: 100%;
-  overflow-x: auto;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
+  margin-top: 18px;
 }
 
 .price-table{
   width: 100%;
-  min-width: 640px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
   font-family: "Poppins", system-ui, sans-serif;
 }
 
@@ -633,24 +634,69 @@ color:#2f4b8f;
   border-bottom: 1px solid var(--line);
   font-size: 15px;
   color: var(--text);
+  background: #ffffff;
+}
+
+.price-table tbody tr:nth-child(even) td{
+  background: #f8fbff;
 }
 
 .price-table tbody tr:last-child td{
   border-bottom: none;
 }
 
-.price-table tbody tr:nth-child(even){
-  background: #f8fbff;
-}
-
-.price-table tbody tr:hover{
-  background: #eef4ff;
-}
-
+/* Mobilon kártyás nézet */
 @media (max-width: 768px){
-  .price-table thead th,
+  .price-table,
+  .price-table thead,
+  .price-table tbody,
+  .price-table th,
+  .price-table td,
+  .price-table tr{
+    display: block;
+    width: 100%;
+  }
+
+  .price-table{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .price-table thead{
+    display: none;
+  }
+
+  .price-table tbody tr{
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
   .price-table tbody td{
-    padding: 14px 14px;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    padding: 14px 16px 14px 130px;
+    position: relative;
+    min-height: 52px;
     font-size: 14px;
+    background: #ffffff !important;
+  }
+
+  .price-table tbody td:last-child{
+    border-bottom: none;
+  }
+
+  .price-table tbody td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    width: 100px;
+    font-weight: 700;
+    color: var(--blue-dark);
   }
 }

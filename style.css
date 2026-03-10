@@ -833,3 +833,107 @@ grid-template-columns:1fr;
 }
 
 }
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szülői galéria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+<nav class="nav">
+
+<a href="index.html">Főoldal</a>
+<a href="rendeles-menete.html">Rendelés menete</a>
+<a href="ajandektargyak.html">Ajándéktárgyak</a>
+<a href="arak.html">Árak</a>
+<a class="active" href="szuloi-galeria.html">Szülői galéria</a>
+<a href="kapcsolat.html">Kapcsolat</a>
+<a href="dokumentumok.html">Dokumentumok</a>
+
+</nav>
+</header>
+
+<main class="section">
+
+<h1 class="page-title">Szülői galéria</h1>
+
+<div class="gallery-info-card">
+
+<h2>A fotók megtekintése</h2>
+
+<p>
+A fényképek egy jelszóval védett online galériában érhetők el.
+A galéria a Pixieset rendszerében működik, amely biztonságos és
+kényelmes felületet biztosít a fotók kiválasztásához.
+</p>
+
+</div>
+
+
+<div class="gallery-info-grid">
+
+<div class="info-card">
+<h3>1. Egyedi hozzáférés</h3>
+<p>
+Minden gyermek számára külön galéria készül.
+A szülők csak a saját gyermekük fotóit láthatják.
+</p>
+</div>
+
+
+<div class="info-card">
+<h3>2. Hozzáférési link</h3>
+<p>
+A galéria elérhetőségét az intézményen keresztül kapják meg.
+A hozzáférés egy egyedi internetes linkből és egy jelszóból áll.
+</p>
+</div>
+
+
+<div class="info-card">
+<h3>3. Fotók kiválasztása</h3>
+<p>
+A galériában a szívecske ikon segítségével lehet kiválasztani
+a megrendelni kívánt fotókat.
+</p>
+</div>
+
+
+<div class="info-card">
+<h3>4. Retusált képek</h3>
+<p>
+A kiválasztott fotók retusálás után kerülnek feltöltésre.
+A kész képek digitálisan letölthetők lesznek.
+</p>
+</div>
+
+</div>
+
+
+<div class="gallery-note">
+
+<p>
+A galéria linkje és a jelszó az intézményen keresztül kerül kiosztásra.
+Ha nem találja a hozzáférési adatokat, kérjük érdeklődjön az intézménynél.
+</p>
+
+</div>
+
+</main>
+
+
+<footer class="footer">
+
+<p>© Törköly József</p>
+<a href="impresszum.html">Impresszum</a>
+
+</footer>
+
+</body>
+</html>

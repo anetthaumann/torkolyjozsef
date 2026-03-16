@@ -1013,3 +1013,17 @@ grid-template-columns:1fr;
     0 24px 54px rgba(18, 40, 92, 0.16),
     0 0 24px rgba(45, 79, 255, 0.28);
 }
+
+.brand__img{
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px){
+  .brand__img{
+    width: 42px;
+    height: 42px;
+  }
+}

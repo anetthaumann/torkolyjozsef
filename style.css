@@ -1015,15 +1015,22 @@ grid-template-columns:1fr;
 }
 
 .brand__img{
-  width: 48px;
-  height: 48px;
+  height: 32px;
+  width: auto;
+  max-width: 120px;
   object-fit: contain;
   display: block;
 }
 
-@media (max-width: 768px){
-  .brand__img{
-    width: 42px;
-    height: 42px;
-  }
+.brand{
+  display:flex;
+  align-items:center;
+}
+
+@media (max-width:768px){
+
+.brand__img{
+  height:26px;
+}
+
 }

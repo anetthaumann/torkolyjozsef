@@ -1096,7 +1096,8 @@ grid-template-columns:1fr;
 .strip-row{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* nagyobb, jól olvasható logó */
@@ -1113,7 +1114,7 @@ grid-template-columns:1fr;
   font-family: "Lora", serif;
   font-size: 28px;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
 }
 
 @media (max-width:768px){
@@ -1135,11 +1136,11 @@ grid-template-columns:1fr;
 }
 
 .strip-logo{
-  height: 60px;
+  height: 90px;
   width: auto;
   object-fit: contain;
 
-  padding: 10px 14px;
+  padding: 6px 10px;
   background: rgba(255,255,255,0.95);
   border-radius: 14px;
 

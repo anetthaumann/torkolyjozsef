@@ -1094,47 +1094,12 @@ grid-template-columns:1fr;
 }
 
 .strip-row{
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
 }
 
-/* nagyobb, jól olvasható logó */
-.strip-logo{
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* jobb oldali cím */
-.strip-title{
-  margin: 0;
-  color: var(--white);
-  font-family: "Lora", serif;
-  font-size: 28px;
-  font-weight: 700;
-  text-align: center;
-}
-
-@media (max-width:768px){
-
-.strip-row{
-  flex-direction: column;
-  gap: 8px;
-}
-
-.strip-logo{
-  height: 48px;
-}
-
-.strip-title{
-  font-size: 20px;
-  text-align: center;
-}
-
-}
-
+/* LOGÓ - bal oldalon */
 .strip-logo{
   height: 90px;
   width: auto;
@@ -1151,7 +1116,6 @@ grid-template-columns:1fr;
   transition: 0.25s ease;
 }
 
-/* finom hover */
 .strip-logo:hover{
   transform: translateY(-2px) scale(1.03);
 
@@ -1160,10 +1124,39 @@ grid-template-columns:1fr;
     0 0 26px rgba(255,255,255,0.55);
 }
 
+/* CÍM - TÉNYLEGESEN KÖZÉPEN */
+.strip-title{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0;
+  color: var(--white);
+  font-family: "Lora", serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* =========================
+   MOBIL
+========================= */
+
 @media (max-width:768px){
 
+.strip-row{
+  flex-direction: column;
+  gap: 8px;
+}
+
+.strip-title{
+  position: static;
+  transform: none;
+  font-size: 20px;
+}
+
 .strip-logo{
-  height: 48px;
+  height: 60px;
   padding: 8px 12px;
 }
 

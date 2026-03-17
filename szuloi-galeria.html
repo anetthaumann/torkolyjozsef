@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Szülői galéria</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szülői galéria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-<nav class="nav">
+  <header class="header">
+    <div class="container header__row">
 
-<a href="index.html">Főoldal</a>
-<a href="rendeles-menete.html">Rendelés menete</a>
-<a href="ajandektargyak.html">Ajándéktárgyak</a>
-<a href="arak.html">Árak</a>
-<a class="active" href="szuloi-galeria.html">Szülői galéria</a>
-<a href="kapcsolat.html">Kapcsolat</a>
-<a href="dokumentumok.html">Dokumentumok</a>
+      <div class="brand" aria-label="Logó">
+        <img src="kepek/logo.jpeg" alt="Logó" class="brand__img">
+      </div>
 
-</nav>
-</header>
+      <nav class="nav" aria-label="Fő navigáció">
+        <a href="index.html">Főoldal</a>
+        <a href="rendeles-menete.html">Rendelés menete</a>
+        <a href="ajandektargyak.html">Ajándéktárgyak</a>
+        <a href="arak.html">Árak</a>
+        <a class="active" href="szuloi-galeria.html">Szülői galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="dokumentumok.html">Dokumentumok</a>
+      </nav>
 
-<main class="section">
+    </div>
+  </header>
 
-<h1 class="page-title">Szülői galéria</h1>
+  <main class="section">
+    <div class="container">
 
-<div class="gallery-info-card">
+      <div class="gallery-info-card">
+        <h2 class="gallery-main-title">A fotók megtekintése</h2>
 
-<h2>A fotók megtekintése</h2>
+        <p>
+          A fényképek egy jelszóval védett online galériában érhetők el.
+          A galéria a <span class="pixieset-highlight">Pixieset</span> rendszerében működik, amely biztonságos és
+          kényelmes felületet biztosít a fotók kiválasztásához.
+        </p>
+      </div>
 
-<p>
-A fényképek egy jelszóval védett online galériában érhetők el.
-A galéria a Pixieset rendszerében működik, amely biztonságos és
-kényelmes felületet biztosít a fotók kiválasztásához.
-</p>
+      <div class="gallery-info-grid">
 
-</div>
+        <div class="info-card">
+          <h3>1. Egyedi hozzáférés</h3>
+          <p>
+            Minden gyermek számára külön galéria készül.
+            A szülők csak a saját gyermekük fotóit láthatják.
+          </p>
+        </div>
 
+        <div class="info-card">
+          <h3>2. Hozzáférési link</h3>
+          <p>
+            A galéria elérhetőségét az intézményen keresztül kapják meg.
+            A hozzáférés egy egyedi internetes linkből és egy jelszóból áll.
+          </p>
+        </div>
 
-<div class="gallery-info-grid">
+        <div class="info-card">
+          <h3>3. Fotók kiválasztása</h3>
+          <p>
+            A galériában a szívecske ikon segítségével lehet kiválasztani
+            a megrendelni kívánt fotókat.
+          </p>
+        </div>
 
-<div class="info-card">
-<h3>1. Egyedi hozzáférés</h3>
-<p>
-Minden gyermek számára külön galéria készül.
-A szülők csak a saját gyermekük fotóit láthatják.
-</p>
-</div>
+        <div class="info-card">
+          <h3>4. Retusált képek</h3>
+          <p>
+            A kiválasztott fotók retusálás után kerülnek feltöltésre.
+            A kész képek digitálisan letölthetők lesznek.
+          </p>
+        </div>
 
+      </div>
 
-<div class="info-card">
-<h3>2. Hozzáférési link</h3>
-<p>
-A galéria elérhetőségét az intézményen keresztül kapják meg.
-A hozzáférés egy egyedi internetes linkből és egy jelszóból áll.
-</p>
-</div>
+      <div class="gallery-note">
+        <p>
+          A galéria linkje és a jelszó az intézményen keresztül kerül kiosztásra.
+          Ha nem találja a hozzáférési adatokat, kérjük érdeklődjön az intézménynél.
+        </p>
+      </div>
 
+    </div>
+  </main>
 
-<div class="info-card">
-<h3>3. Fotók kiválasztása</h3>
-<p>
-A galériában a szívecske ikon segítségével lehet kiválasztani
-a megrendelni kívánt fotókat.
-</p>
-</div>
-
-
-<div class="info-card">
-<h3>4. Retusált képek</h3>
-<p>
-A kiválasztott fotók retusálás után kerülnek feltöltésre.
-A kész képek digitálisan letölthetők lesznek.
-</p>
-</div>
-
-</div>
-
-
-<div class="gallery-note">
-
-<p>
-A galéria linkje és a jelszó az intézményen keresztül kerül kiosztásra.
-Ha nem találja a hozzáférési adatokat, kérjük érdeklődjön az intézménynél.
-</p>
-
-</div>
-
-</main>
-
-
-<footer class="footer">
-
-<p>© Törköly József</p>
-<a href="impresszum.html">Impresszum</a>
-
-</footer>
+  <footer class="footer">
+    <div class="container footer__row">
+      <p>© Törköly József</p>
+      <a href="impresszum.html">Impresszum</a>
+    </div>
+  </footer>
 
 </body>
 </html>

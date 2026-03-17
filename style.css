@@ -1210,3 +1210,21 @@ color:#2f4b8f;
 }
 
 }
+
+.gallery-main-title{
+  margin-top: 0;
+  color: var(--text);
+}
+
+.pixieset-highlight{
+  display: inline-block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+@media (max-width:768px){
+  .pixieset-highlight{
+    font-size: 1.08em;
+  }
+}

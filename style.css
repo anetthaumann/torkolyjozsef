@@ -1063,3 +1063,15 @@ grid-template-columns:1fr;
 }
 
 }
+
+.strip-logo{
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width:768px){
+  .strip-logo{
+    height: 50px;
+  }
+}

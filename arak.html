@@ -16,13 +16,7 @@
 <header class="header">
   <div class="container header__row">
 
-    <a class="brand" href="index.html">
-      <div class="brand" aria-label="Logó">
-  <img src="kepek/logo.jpeg" alt="Logó" class="brand__img">
-</div>
-    </a>
-
-    <nav class="nav">
+    <nav class="nav" aria-label="Fő navigáció">
       <a href="index.html">Főoldal</a>
       <a href="rendeles-menete.html">Rendelés menete</a>
       <a href="ajandektargyak.html">Ajándéktárgyak</a>
@@ -35,61 +29,74 @@
   </div>
 </header>
 
-<main class="section">
-  <div class="container">
+<main>
 
-    <div class="section-heading">
-      <p class="section-kicker">Tájékoztató árlista</p>
-      <h2>Árak</h2>
+  <section class="service-strip">
+    <div class="container" style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+
+      <img src="kepek/logo.jpeg" alt="Logó" class="strip-logo">
+
+      <p>Árlista</p>
+
     </div>
+  </section>
 
-    <p class="lead">
-      Az alábbi árak demó tartalomként szerepelnek. A végleges árlista és termékkínálat
-      később kerül pontosításra.
-    </p>
+  <section class="section">
+    <div class="container">
 
-    <div class="price-table-wrap">
-  <table class="price-table">
-    <thead>
-      <tr>
-        <th>Termék</th>
-        <th>Ár</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Termék">Kép (10×15 cm)</td>
-        <td data-label="Ár">1 000 Ft</td>
-      </tr>
-      <tr>
-        <td data-label="Termék">Ajándék 1</td>
-        <td data-label="Ár">2 500 Ft</td>
-      </tr>
-      <tr>
-        <td data-label="Termék">Ajándék 2</td>
-        <td data-label="Ár">3 500 Ft</td>
-      </tr>
-      <tr>
-        <td data-label="Termék">Ajándék 3</td>
-        <td data-label="Ár">4 500 Ft</td>
-      </tr>
-      <tr>
-        <td data-label="Termék">Ajándék 4</td>
-        <td data-label="Ár">5 500 Ft</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      <div class="section-heading">
+        <h2>Árak</h2>
+      </div>
 
-    <div class="info-panel" style="margin-top: 28px;">
-      <h3>Fontos tudnivaló</h3>
-      <p>
-        A feltüntetett árak tájékoztató jellegűek. Az aktuális kínálat intézményenként
-        és fotózási csomagonként eltérhet.
+      <p class="lead">
+        Az alábbi árak demó tartalomként szerepelnek. A végleges árlista és termékkínálat
+        később kerül pontosításra.
       </p>
-    </div>
 
-  </div>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Termék</th>
+              <th>Ár</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Termék">Kép (10×15 cm)</td>
+              <td data-label="Ár">1 000 Ft</td>
+            </tr>
+            <tr>
+              <td data-label="Termék">Ajándék 1</td>
+              <td data-label="Ár">2 500 Ft</td>
+            </tr>
+            <tr>
+              <td data-label="Termék">Ajándék 2</td>
+              <td data-label="Ár">3 500 Ft</td>
+            </tr>
+            <tr>
+              <td data-label="Termék">Ajándék 3</td>
+              <td data-label="Ár">4 500 Ft</td>
+            </tr>
+            <tr>
+              <td data-label="Termék">Ajándék 4</td>
+              <td data-label="Ár">5 500 Ft</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-panel" style="margin-top: 28px;">
+        <h3>Fontos tudnivaló</h3>
+        <p>
+          A feltüntetett árak tájékoztató jellegűek. Az aktuális kínálat intézményenként
+          és fotózási csomagonként eltérhet.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">

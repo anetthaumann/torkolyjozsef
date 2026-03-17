@@ -1211,3 +1211,11 @@ grid-template-columns:1fr;
 }
 
 }
+
+.contact-note{
+  max-width: 520px;
+  margin: 14px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+}

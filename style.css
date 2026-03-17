@@ -1015,9 +1015,9 @@ grid-template-columns:1fr;
 }
 
 .brand__img{
-  height: 32px;
+  height: 40px;
   width: auto;
-  max-width: 120px;
+  max-width: 160px;
   object-fit: contain;
   display: block;
 }
@@ -1030,7 +1030,36 @@ grid-template-columns:1fr;
 @media (max-width:768px){
 
 .brand__img{
-  height:26px;
+  height:48px;
+}
+
+}
+
+@media (max-width:768px){
+
+.header__row{
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* menü középre */
+.nav{
+  justify-content: center;
+  width: 100%;
+}
+
+/* gombok szépen törjenek */
+.nav a{
+  flex: 0 0 auto;
+}
+
+}
+
+@media (max-width:768px){
+
+.header{
+  padding: 6px 0;
 }
 
 }

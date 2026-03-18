@@ -15,6 +15,7 @@
 
 html{
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body{
@@ -77,7 +78,7 @@ h3{
 }
 
 /* =========================
-   FEJLÉC
+   FEJLÉC - összes oldal
 ========================= */
 
 .header{
@@ -152,7 +153,7 @@ h3{
 }
 
 /* =========================
-   SZEKCIÓK
+   SZEKCIÓK - általános
 ========================= */
 
 .section{
@@ -161,8 +162,6 @@ h3{
 
 .section--light{
   background: var(--blue-soft);
-  border-top: none;
-  border-bottom: none;
 }
 
 .section-heading{
@@ -174,7 +173,7 @@ h3{
 }
 
 /* =========================
-   KÉK CÍMSÁV
+   KÉK CÍMSÁV - több aloldal
 ========================= */
 
 .service-strip{
@@ -200,7 +199,7 @@ h3{
 }
 
 /* =========================
-   FŐOLDAL
+   FŐOLDAL - index.html
 ========================= */
 
 .intro-card{
@@ -289,7 +288,7 @@ h3{
   background: linear-gradient(145deg, var(--blue), var(--blue-dark));
   display: grid;
   place-items: center;
-  margin-bottom: 0 auto 14px;
+  margin: 0 auto 14px;
   box-shadow: 0 12px 28px rgba(18, 40, 92, 0.16);
 }
 
@@ -309,7 +308,7 @@ h3{
 }
 
 /* =========================
-   RENDELÉS MENETE
+   RENDELÉS MENETE - rendeles-menete.html
 ========================= */
 
 .steps{
@@ -339,7 +338,7 @@ h3{
 }
 
 /* =========================
-   ÁRAK
+   ÁRAK - arak.html
 ========================= */
 
 .price-table-wrap{
@@ -359,6 +358,7 @@ h3{
   box-shadow:
     0 18px 40px rgba(18, 40, 92, 0.10),
     0 0 18px rgba(45, 79, 255, 0.14);
+  table-layout: fixed;
 }
 
 .price-table thead th{
@@ -389,7 +389,7 @@ h3{
 }
 
 /* =========================
-   KAPCSOLAT
+   KAPCSOLAT - kapcsolat.html
 ========================= */
 
 .contact-card{
@@ -420,7 +420,7 @@ h3{
 }
 
 /* =========================
-   DOKUMENTUMOK
+   DOKUMENTUMOK - dokumentumok.html
 ========================= */
 
 .docs-container{
@@ -458,7 +458,7 @@ h3{
 }
 
 /* =========================
-   SZÜLŐI GALÉRIA
+   SZÜLŐI GALÉRIA - szuloi-galeria.html
 ========================= */
 
 .gallery-info-card{
@@ -490,6 +490,11 @@ h3{
   text-align: center;
 }
 
+.info-card h3,
+.info-card p{
+  text-align: center;
+}
+
 .info-card h3{
   margin-top: 0;
   margin-bottom: 10px;
@@ -514,7 +519,12 @@ h3{
 }
 
 /* =========================
-   LÁBLÉC
+   IMPRESSZUM - impresszum.html
+   Ugyanazt a contact-card stílust használja
+========================= */
+
+/* =========================
+   LÁBLÉC - összes oldal
 ========================= */
 
 .footer{
@@ -544,6 +554,7 @@ h3{
 
 /* =========================
    EGYSÉGES KÁRTYASTÍLUS
+   több aloldal közös
 ========================= */
 
 .intro-card,
@@ -581,7 +592,7 @@ h3{
 }
 
 /* =========================
-   TABLET
+   TABLET - 1024px alatt
 ========================= */
 
 @media (max-width: 1024px){
@@ -591,7 +602,7 @@ h3{
 }
 
 /* =========================
-   MOBIL
+   MOBIL - 768px alatt
 ========================= */
 
 @media (max-width: 768px){
@@ -672,13 +683,25 @@ h3{
     height: 24px;
   }
 
+  /* ÁRAK - mobilon is normál táblázat marad */
   .price-table-wrap{
-  overflow-x: auto;
-}
+    width: 100%;
+    max-width: 100%;
+    margin: 18px auto 0;
+  }
 
-.price-table{
-  min-width: 420px;
-}
+  .price-table{
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .price-table thead th,
+  .price-table tbody td{
+    padding: 12px 10px;
+    font-size: 14px;
+    text-align: center;
+  }
 
   .docs-container{
     grid-template-columns: 1fr;

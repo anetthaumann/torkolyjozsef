@@ -223,24 +223,31 @@ h3{
 .info-list{
   display: grid;
   gap: 14px;
+  justify-items: center;
 }
 
 .info-item{
+  width: 100%;
+  max-width: 320px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: 16px;
+  padding: 14px 20px;
   background: #fbfdff;
+  text-align: center;
 }
 
 .info-item strong{
   display: block;
-  margin-bottom: 4px;
+  margin: 0;
   color: var(--blue-dark);
 }
 
 .info-item span{
-  color: var(--muted);
-  font-size: 15px;
+  display: none;
 }
 
 .gift-grid{

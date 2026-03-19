@@ -610,8 +610,14 @@ h3{
     0 0 24px rgba(45, 79, 255, 0.28);
 }
 
-.service-strip + .section{
-  padding-top: 20px;
+
+.price-strip{
+  margin-bottom: 8px;
+}
+
+.price-section{
+  padding-top: 10px;
+  padding-bottom: 46px;
 }
 
 /* =========================

@@ -610,6 +610,10 @@ h3{
     0 0 24px rgba(45, 79, 255, 0.28);
 }
 
+.service-strip + .section{
+  padding-top: 20px;
+}
+
 /* =========================
    TABLET - 1024px alatt
 ========================= */
